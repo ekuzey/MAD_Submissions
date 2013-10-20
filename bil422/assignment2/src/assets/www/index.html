@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>PhoneGap</title>
+    <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+</head>
+<body onload="init();">
+    <h1>BBM422 Assignment 2</h1>
+    <form>
+        <input name="name" type="text" id="name"/>
+        <input type="button" value="OK" onclick="msg()" />
+</form>
+
+
+    <script type="text/javascript">
+function init() {
+    document.addEventListener("deviceready", deviceInfo, true);
+
+}
+
+function msg()
+{
+
+    alert(document.getElementById("name").value+", Welcome");
+}
+
+
+    </script>
+</body>
+</html>
